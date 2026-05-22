@@ -1,13 +1,4 @@
 [build]
+  base = "um2portal-main"
+  publish = "public"
   functions = "netlify/functions"
-  command = "fc-list && npm install"
-
-[build.environment]
-  NODE_VERSION = "20"
-  AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
-  SHARP_IGNORE_GLOBAL_LIBVIPS = "1"
-  AWS_LAMBDA_FUNCTION_TIMEOUT = "30"
-
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["sharp"]
