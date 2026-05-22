@@ -1,4 +1,12 @@
 [build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+
+[build]
   publish = "um2portal-main/public"
   functions = "um2portal-main/netlify/functions"
 
